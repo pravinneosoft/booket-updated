@@ -1,0 +1,155 @@
+.footer {
+    background-color: $primary-color;
+    padding: 80px 0 113px 0;
+
+    &__logo {
+        @include breakpoint(md) {
+            margin-bottom: 26px;
+        }
+
+        @include breakpoint(sm) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 600;
+
+        @include breakpoint(md) {
+            margin-bottom: 4px;
+            margin-top: 0;
+        }
+
+        @include breakpoint(sm) {
+            margin-bottom: 0;
+            margin-top: 16px;
+            font-size: 22px;
+        }
+
+        @include breakpoint(xs) {
+            margin-top: 16px;
+            font-size: 22px;
+        }
+    }
+
+    &__list {
+        font-size: 14px;
+        font-weight: 400;
+        list-style-type: none;
+        line-height: 24px;
+        display: inline-block;
+        text-align: left;
+        padding-left: 0;
+
+
+        @include breakpoint(sm) {
+            margin-top: 13px;
+            text-align: center;
+        }
+
+        @include breakpoint(xs) {
+            margin-top: 13px;
+            text-align: center;
+        }
+
+        @include breakpoint(md) {
+            margin-top: 23px;
+            text-align: left;
+        }
+
+        &-addres {
+
+
+            @include breakpoint(sm) {
+                margin-top: 13px;
+                text-align: left;
+            }
+
+            @include breakpoint(xs) {
+                margin-top: 13px;
+                padding-left: 22px;
+                text-align: left;
+            }
+
+            @include breakpoint(md) {
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__social {
+        margin: 12px 0 36px 0;
+
+
+        @include breakpoint(sm) {
+            justify-content: center;
+        }
+
+        @include breakpoint(xs) {
+            justify-content: center;
+        }
+
+        @include breakpoint(md) {
+            justify-content: start;
+        }
+
+    }
+
+    &__icon {
+        color: $secondary-color;
+        margin-right: 8px;
+    }
+
+    &__column {
+        text-align: center;
+
+        @include breakpoint(md) {
+            text-align: start;
+        }
+    }
+
+    &__btn {
+       
+
+        @include breakpoint(sm) {
+            display: flex;
+            justify-content: center;
+        }
+
+        @include breakpoint(xs) {
+            display: flex;
+            justify-content: center;
+        }
+        @include breakpoint(md) {
+            display: flex;
+            display: block;
+            justify-content: end;
+        }
+    }
+
+    &__apps {
+      
+        @include breakpoint(sm) {
+            justify-content: center;
+        }
+
+        @include breakpoint(xs) {
+            justify-content: center;
+        }
+        @include breakpoint(md) {
+            justify-content: start;
+        }
+
+    }
+
+    &__socialicon {
+        transition: .7s;
+        z-index: 3;
+
+        &:hover {
+            transform: rotateY(360deg);
+        }
+    }
+
+}

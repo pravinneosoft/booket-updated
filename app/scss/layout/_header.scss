@@ -1,0 +1,252 @@
+.nav-links {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    color: $color-dark;
+}
+
+.header {
+    background-color: $primary-color;
+    margin-bottom: 37px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    @include breakpoint(sm) {
+        height: auto;
+    }
+
+    @include breakpoint(xs) {
+        height: auto;
+    }
+
+    @include breakpoint(lg) {
+        height: 112px;
+    }
+
+    &__list {
+        @include breakpoint(xs) {
+            height: auto;
+            margin-top: 5px;
+        }
+
+        @include breakpoint(sm) {
+            height: auto;
+            margin-top: 5px;
+        }
+
+        
+        @include breakpoint(md) {
+            border-radius: 30px;
+            background: $color-white;
+            padding: 0 8px 0 14px;
+            width: 672px;
+            height: 64px;
+            align-items: center;
+            margin-left: auto;
+            margin-top: 5px;
+            padding-left: 24px;
+        }
+        @include breakpoint(lg) {
+            margin-left: 0;
+        }
+
+    }
+
+    &__humbergurg {
+        color: $color-white;
+        font-size: 30px;
+    }
+
+    &__input {
+        border: none;
+        width: 100px;
+
+        @include breakpoint(sm) {
+            font-size: 22px;
+            width: 100%;
+            border-radius: 25px;
+            padding: 15px;
+            margin-top: 70px;
+        }
+
+        @include breakpoint(xs) {
+            font-size: 20px;
+            width: 100%;
+            border-radius: 25px;
+            padding: 15px;
+            margin-top: 70px;
+        }
+
+        @include breakpoint(md) {
+            height: auto;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 0;
+            margin-top: 0;
+        }
+    }
+
+    &__text {
+   @include breakpoint(sm) {
+            color: #fafaff;
+            font-size: 22px;
+            font-weight: 500;
+            margin: 20px 0;
+            position: absolute;
+            left: 0;
+            bottom: 55px;
+        }
+
+        @include breakpoint(xs) {
+            color: #fafaff;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 20px 0;
+            position: absolute;
+            left: 0;
+            bottom: 55px;
+        }
+        @include breakpoint(md) {
+            margin: 0;
+            color: $color-lightdark;
+            font-size: 14px;
+            font-weight: 400;
+            position: unset;
+        }
+    }
+
+    &__icon {
+        position: unset !important;
+
+        &-search {
+            font-size: 22px;
+        }
+
+        @include breakpoint(sm) {
+            margin-top: 20px;
+        }
+
+        @include breakpoint(xs) {
+            margin-top: 20px;
+        }
+
+        @include breakpoint(md) {
+            margin: 0;
+        }
+
+    }
+
+    &__links {
+        @include breakpoint(xs) {
+            justify-content: space-evenly;
+            margin-bottom: 40px;
+        }
+
+        @include breakpoint(sm) {
+            justify-content: space-evenly;
+            margin-bottom: 40px;
+        }
+
+        @include breakpoint(md) {
+            margin: 20px 0px;
+        }
+
+        @include breakpoint(lg) {
+            justify-content: unset;
+            margin: 0;
+        }
+    }
+
+    &__logo {
+        @include breakpoint(xs) {
+            width: 44px;
+        }
+
+        @include breakpoint(sm) {
+            width: 40px;
+        }
+
+        @include breakpoint(md) {
+            width: unset;
+        }
+    }
+}
+
+.navbar-nav {
+    @include breakpoint(md) {
+        flex-direction: unset;
+    }
+
+    @include breakpoint(lg) {
+        flex-direction: column;
+    }
+}
+
+.triger_search {
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    background: $secondary-color;
+    border: 0;
+    color: $color-white;
+}
+
+.input {
+    border: 0;
+    @include breakpoint(sm) {
+        width: 0;
+        position: absolute;
+        left: 50px;
+
+    }
+
+    @include breakpoint(xs) {
+        width: 0;
+        border-radius: 20px;
+        border: 0;
+        position: absolute;
+        left: 50px;
+
+    }
+}
+
+.input-open {
+
+    @include breakpoint(sm) {
+        width: 64%;
+        position: absolute;
+        padding: 14px;
+        bottom: 109px;
+        border-radius: 25px;
+        left: 84px;
+        transition: 0.4s ease-in-out all;
+    }
+
+    @include breakpoint(xs) {
+        width: 64%;
+        position: absolute;
+        padding: 14px;
+        bottom: 109px;
+        border-radius: 25px;
+        left: 84px;
+        transition: 0.4s ease-in-out all;
+    }
+
+    @include breakpoint(md) {
+
+        transition: .4s ease-in-out all;
+        width: 72%;
+        position: absolute;
+        bottom: 102px;
+        /* top: 75px; */
+        left: 78px;
+    }
+
+    @include breakpoint(lg) {
+        width: 49%;
+        position: absolute;
+        bottom: 8px;
+        left: 75px;
+    }
+}
