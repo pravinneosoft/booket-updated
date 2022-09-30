@@ -61,7 +61,10 @@
     &__input {
         border: none;
         width: 100px;
-
+&:focus-visible{
+    border: 0;
+    outline: 0;
+}
         @include breakpoint(sm) {
             font-size: 22px;
             width: 100%;

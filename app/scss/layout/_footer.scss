@@ -41,7 +41,7 @@
         display: inline-block;
         text-align: left;
         padding-left: 0;
-
+line-height: 30px;
 
         @include breakpoint(sm) {
             margin-top: 13px;
@@ -91,7 +91,7 @@
         }
 
         @include breakpoint(md) {
-            justify-content: start;
+            justify-content: flex-start;
         }
 
     }
@@ -124,7 +124,7 @@
         @include breakpoint(md) {
             display: flex;
             display: block;
-            justify-content: end;
+            justify-content: flex-end;
         }
     }
 
@@ -138,7 +138,7 @@
             justify-content: center;
         }
         @include breakpoint(md) {
-            justify-content: start;
+            justify-content: flex-start;
         }
 
     }
