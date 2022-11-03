@@ -1,115 +1,71 @@
 address{
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 a{
-    text-decoration: none;
-    color: $color-white;
-    &:hover{
-        text-decoration: none;
-        color: $secondary-color;
-    }
+  text-decoration: none;
+  color: $color-white;
+  &:hover{
+      text-decoration: none;
+      color: $secondary-color;
+  }
 }
 .topheading {
-    margin-top: 60px;
-    position: relative;
-justify-content: space-between;
-    &__text {
-        color: $color-black;
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 12px;
-    }
+  margin-top: 60px;
+  position: relative;
 
-    // &__view {
-    //     color: $secondary-color;
-    //     font-size: 16px;
-    //     font-weight: 600;
-        
-    //     position: relative;
-    //     &:hover{
-    //         transition: 0.3s all ease-in-out;
-    //         &::after{
-    //             content: "";
-    //     height: 4px;
-    //     width: 70px;
-    //     border-radius: 4px;
-    //     background-color: #fe7700;
-    //     position: absolute;
-    //     bottom: 10px;
-    //     /* left: 0; */
-    //     right: 10px;
-    //         }
-    //     }
-        
-    // }
+  &__text {
+      color: $color-black;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 12px;
+  }
 
-    &::after {
-        content: '';
-        height: 4px;
-        width: 48px;
-        border-radius: 4px;
-        background-color: $secondary-color;
-        position: absolute;
-        bottom: 0;
-        left: 15px;
-    }
+  &__view {
+      color: $secondary-color;
+      font-size: 16px;
+      font-weight: 600;
+  }
+  &::before {
+    content: '';
+    height: 4px;
+    width: 24px;
+    border-radius: 4px;
+    background-color: $secondary-color;
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+}
+  &::after {
+      content: '';
+      height: 4px;
+      width: 48px;
+      border-radius: 4px;
+      background-color: $secondary-color;
+      position: absolute;
+      bottom: 0;
+      left: 15px;
+  }
 }
 .button{
-  width: 150px;
-  padding: 6px;
+background-color: $color-dark-black;
+width: 144px;
+height: 41px;
+border: 1px solid $color-white;
+border-radius: 6px;
+padding: 6px;
 &__title{
-    font-size: 18px;
-    font-weight: 650;
-    color: $color-white;
-    text-align: initial;
+  font-size: 18px;
+  font-weight: 650;
+  color: $color-white;
+  text-align: initial;
 }
 &__text{
-    font-size: 8px;
-    font-weight: 450;
-    color: $color-white;
+  font-size: 8px;
+  font-weight: 450;
+  color: $color-white;
 }
 }
 #first-name-err, #last-name-err, #email-err, #mobile-number-err, #password-err, #confirm-password-err{
-    color:red;
-    font-size:13px;
-  }
-  .topheading__view {
-    display: inline-flex;
-    position: relative;
-    font-size: 16px;
-    font-weight: 600;
-    color: $secondary-color;
-    align-items: center;
-    justify-content: flex-end;
-    width: auto;
-  }
-  
-  .topheading__view:after {
-    content: '';
-    position: absolute;
-    width: 74%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 12px;
-    background-color:$secondary-color;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-   
-  }
-  
-  .topheading__view:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-
-  #btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
-    height: initial;
-    width: initial;
-    background-color: $secondary-color;
-    color: $color-white;
-  }
+  color:$secondary-color;
+  font-size:13px;
+}

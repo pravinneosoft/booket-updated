@@ -140,6 +140,9 @@ line-height: 30px;
         @include breakpoint(md) {
             justify-content: flex-start;
         }
+        &::nth-child(2){
+            border-color: red;
+        }
 
     }
 

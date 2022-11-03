@@ -27,7 +27,7 @@
          <nav class="navbar navbar-expand-lg navbar-light p-0">
             <a title="navigation-logo" class="navbar-brand" href="javascript:void(0)"><img class="header__logo"
                   src="./app/images/booket-logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                aria-label="Toggle navigation">
                <i class="fa-solid fa-bars header__humbergurg"></i>
@@ -74,7 +74,7 @@
                </ul>
                <div class="d-flex header__links">
                   <a title="sign-in here" href="./app/signin.html" class="btn btn rounded-pill d-flex align-items-center justify-content-center btn--primary  btn-sign">Sign in</a>
-                  <a href="contact.html" title="./app/sign-up here"
+                  <a href="./app/contact.html" title="./app/sign-up here"
                      class="btn rounded-pill d-flex align-items-center justify-content-center btn--primary ms-1">Sign
                      up</a>
                </div>
@@ -516,13 +516,15 @@
                   <div class="row mt-2 mx-auto footer__apps gap-2">
                      <a href="https://www.applications.wiki/get/play-store/"
                         class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button"> <img
-                           src="./app/images/available-on-the-app-store-logo-svg-vector.svg"class="w-100" alt="">
-                    
+                           src="./app/images/apple.png" alt="">
+                        <span class="d-inline-block   button__title">
+                           <small class=" d-block button__text">Download on the</small> App Store </span>
                      </a>
                      <a href="https://play.google.com/store"
                         class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button"> <img
-                           src="./app/images/google-playstore.jpg" class="w-100" alt="">
-                   
+                           src="./app/images/playstore.png" alt="">
+                        <span class="d-inline-block text-left button__title">
+                           <small class="d-block button__text">Get it on the</small> Google Play </span>
                      </a>
                   </div>
                </div>
@@ -541,7 +543,7 @@
                <a href="footer__logo"><img class="footer__logo" src="./app/images/footer_logo.png" alt="footer logo"></a>
                <p class="footer__title">Are you an event company? </p>
                <div class="footer__btn">
-                  <a href="./app/activate.html" class="btn btn--joinus rounded-pill">Join
+                  <a href="./app/activate.html" class="btn btn--footer rounded-pill">Join
                      Us</a></div>
             </div>
             <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 mx-auto footer__column">
@@ -589,27 +591,23 @@
 
                <div class="row mt-2 mx-auto footer__apps gap-2">
                   <a href="https://www.applications.wiki/get/play-store/"
-                     class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button"> <img
-                        src="./app/images/available-on-the-app-store-logo-svg-vector.svg"class="w-100" alt="">
-                 
+                     class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button border-dark"> <img
+                        src="./app/images/apple.png" alt="">
+                     <span class="d-inline-block   button__title">
+                        <small class=" d-block button__text">Download on the</small> App Store </span>
                   </a>
                   <a href="https://play.google.com/store"
-                     class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button"> <img
-                        src="./app/images/google-playstore.jpg" class="w-100" alt="">
-                
+                     class="col-md-6 p-0 d-flex align-items-center justify-content-evenly button border-dark"> <img
+                        src="./app/images/playstore.png" alt="">
+                     <span class="d-inline-block text-left button__title">
+                        <small class="d-block button__text">Get it on the</small> Google Play </span>
                   </a>
                </div>
 
             </div>
          </div>
       </div>
-      <button
-        type="button"
-        class="btn btn-floating btn-lg"
-        id="btn-back-to-top"
-        >
-  <i class="fa fa-arrow-up"></i>
-</button>
+     
    </footer>
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
@@ -623,22 +621,7 @@
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"></script>
    <script src="./app/js/main.js"></script>
-   <!-- <script>
-      var x = document.getElementById("demo");
-      
-      function getLocation() {
-        if (navigator.geolocation) {
-          navigator.geolocation.getCurrentPosition(showPosition);
-        } else { 
-          x.innerHTML = "Geolocation is not supported by this browser.";
-        }
-      }
-      
-      function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude + 
-        "<br>Longitude: " + position.coords.longitude;
-      }
-      </script> -->
+ 
 </body>
 
 </html>

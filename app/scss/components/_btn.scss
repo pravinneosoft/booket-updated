@@ -4,6 +4,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:focus{
+      outline: 0;
+      box-shadow: none;
+ 
+  }
 }
 
 .btn--primary {
@@ -64,8 +69,8 @@
     margin-top: 21px;
 }
   &:hover {
-      background-color: $color-white;
-      color: $color-black;
+      background-color: $primary-color;
+      color: $color-white;
   }
 }
 
@@ -80,8 +85,22 @@
   align-items: center;
   justify-content: center;
   transform: translateX(14px);
+  &:hover{
+    background-color: $secondary-color;
+    color: $color-white;
+  }
 }
-
+.btn--footer{
+  background-color: $secondary-color;
+  color: $color-white;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 21px;
+  &:hover{
+    background-color: $color-white;
+    color: $secondary-color;
+  }
+}
 
 .triger_search{
   display: flex;

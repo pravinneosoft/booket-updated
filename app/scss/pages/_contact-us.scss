@@ -220,7 +220,13 @@
         justify-content: center;
         align-items: center;
         margin-left: 16px;
-
+        &:hover{
+            background-color: $color-blue;
+            cursor: pointer;
+            .signupform__facebook-icon{
+                color: $color-white;
+            }
+        }
         @include breakpoint(sm) {
             margin-top: 0;
         }
@@ -232,6 +238,9 @@
         &-icon {
             color: $color-grey;
             font-size: 22px;
+        }
+        a{
+            display: inline-flex;
         }
     }
 
